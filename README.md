@@ -9,6 +9,7 @@ Content:
 3. Message Passing
 4. Links
 5. Exit Signals and System Processes
+6. Monitors
 
 # 🔵 Part 1 Processes
 
