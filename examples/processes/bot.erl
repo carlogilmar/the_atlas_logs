@@ -19,3 +19,10 @@ init(Counter) when Counter < 1000000 ->
 
 init(Counter) when Counter >= 1000000 ->
   io:fwrite("Es TODO!").
+
+%%% How to run this code?
+%%% 1. Start the Erlang Shell with the flag to allow the max number of processes
+%%%  erl +P 134217727
+%%% 2. Run the code
+%%% 1> c(bot).
+%%% 2> bot:start().
