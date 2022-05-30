@@ -20,6 +20,9 @@ waiting_for_msg_and_terminate() ->
   end.
 
 %% erlang:process_info(pid(0,0,0)).
+%% Create a process with this function to create the linked process
+%% Parent = spawn(brother, create_link_brother, []).
+%% is_process_alive(pid)
 create_link_brother() ->
   process_flag(trap_exit, true), % Parent is going to trap exits
   spawn_link(brother, waiting_for_msg_and_terminate, []),
